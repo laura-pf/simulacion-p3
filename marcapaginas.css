@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.bookmark {
+  width: 300px;
+  height: 100px;
+  background-color: #ffeb3b;
+  position: relative;
+  margin: 50px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  cursor: pointer;
+}
+
+.bookmark-content {
+  padding: 10px;
+  background-color: #fff9c4;
+  transform: rotate(-3deg);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1;
+  border: 2px dashed #ffa000;
+}
+
+.bookmark p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bookmark:active {
+  transform: scale(0.95) rotate(1deg);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
